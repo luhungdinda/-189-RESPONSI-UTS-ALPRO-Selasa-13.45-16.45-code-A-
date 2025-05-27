@@ -1,0 +1,71 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+	string username, password;
+	cout<<"masukkan username :";
+	cin>>username;
+	cout<<"masukkan password :";
+	cin>>password;
+	
+		if(username=="admin" && password=="1994"){
+			cout<<"anda berhasil login"<<endl;
+		}else{
+			cout<<"anda gagal login"<<endl;
+		}
+		cout<<endl;
+		
+				
+	int Pilih,Matkul, Dosen, Waktu,Ruang;
+	int PILIHAN;
+do{
+	cout<<"-----------Jadwal Kuliah-----------"<<endl;
+	cout<<"1.Matkul"<<endl;
+	cout<<"2.Dosen"<<endl;
+	cout<<"3.Waktu"<<endl;
+	cout<<"4.Ruang"<<endl;
+	cout<<"5.keluar"<<endl;
+	cout<<"Pilih :";
+	cin>>PILIHAN;	
+	cout<<endl;
+	
+	
+	switch(PILIHAN){
+		case 1:
+			cout<<"----------Matkul----------"<<endl;
+			cout<<"1.ALPRO"<<endl;
+			cout<<"2.MATDIS"<<endl;
+			cout<<"3.ARSIKOM\n"<<endl;
+			cout<<"Pilih :";
+			cin>>PILIHAN;
+		break;
+		case 2:
+			cout<<"----------Dosen----------"<<endl;
+			cout<<"1.Pak Budi"<<endl;
+			cout<<"2.Pak Aldi"<<endl;
+			cout<<"3.Pak siap\n"<<endl;
+			cout<<"Pilih :";
+			cin>>PILIHAN;
+		break;
+		case 3:
+			cout<<"----------Waktu----------"<<endl;
+			cout<<"1.Senin jam 7.00-9.00"<<endl;
+			cout<<"2.Selasa jam 9.00-12.00"<<endl;
+			cout<<"3.Rabu jam 8.00-11.00\n"<<endl;
+			cout<<"Pilih :";
+			cin>>PILIHAN;
+		break;
+		case 4:
+			cout<<"----------Ruang----------"<<endl;
+			cout<<"1.1986"<<endl;
+			cout<<"2.1903"<<endl;
+			cout<<"3.1922\n"<<endl;
+			cout<<"Pilih :";
+			cin>>PILIHAN;
+		break;
+	cout<<endl;
+	 }
+}while(PILIHAN!=5);
+system("cls");
+cout<<"TERIMA KASIH"<<endl;
+	}
